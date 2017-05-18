@@ -19,4 +19,4 @@ WORKDIR /spring-petclinic
 
 RUN mvn -Dmaven.test.skip=true package &&\
     mv /spring-petclinic/target/petclinic.war /tomcat/webapps/petclinic.war &&\
-rm -rf /spring-petclinic
+    rm -rf /spring-petclinic
