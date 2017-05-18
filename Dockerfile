@@ -17,10 +17,10 @@ WORKDIR /spring-petclinic
 
 #ADD ./stagemonitor.properties /spring-petclinic/src/main/resources/stagemonitor.properties
 
-#RUN mvn -Dmaven.test.skip=true package &&\
-#    mv /spring-petclinic/target/petclinic.war /tomcat/webapps/petclinic.war &&\
-#    rm -rf /spring-petclinic
+RUN mvn -Dmaven.test.skip=true package &&\
+    mv /spring-petclinic/target/petclinic.war /tomcat/webapps/petclinic.war &&\
+    rm -rf /spring-petclinic
 #RUN mvn -Dmaven.test.skip=true package 
-RUN cd /spring-petclinic && mvn -Dmaven.test.skip=true package 
-RUN mv /spring-petclinic/target/petclinic.war /tomcat/webapps/petclinic.war
-RUN rm -rf /spring-petclinic
+#RUN cd /spring-petclinic && mvn -Dmaven.test.skip=true package 
+#RUN mv /spring-petclinic/target/petclinic.war /tomcat/webapps/petclinic.war
+#RUN rm -rf /spring-petclinic
