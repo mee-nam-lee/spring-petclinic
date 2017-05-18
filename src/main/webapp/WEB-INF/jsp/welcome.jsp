@@ -13,6 +13,7 @@
 <div class="container">
     <jsp:include page="fragments/bodyHeader.jsp"/>
     <h2><fmt:message key="welcome"/></h2>
+    <h2>modify</h2>
     <spring:url value="/resources/images/pets.png" htmlEscape="true" var="petsImage"/>
     <img src="${petsImage}"/>
 
