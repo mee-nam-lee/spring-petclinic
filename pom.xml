@@ -220,10 +220,11 @@
         </dependency>
         -->
         <!-- For MySql only -->
+        <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
             <version>${mysql-driver.version}</version>
-
+        </dependency>
         <!-- HIBERNATE -->
         <dependency>
             <groupId>org.hibernate</groupId>
